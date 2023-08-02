@@ -90,7 +90,7 @@ nav {
     position: sticky;
     width: 100%;
     background-color: var(--bg);
-    padding: 0 20vw;
+    padding: 0 10vw;
     z-index: 99;
     top: 0;
 }
@@ -348,6 +348,39 @@ footer {
         opacity: 1 !important
     }
 
+    .nav-list-div {
+        display: none;
+    }
+
+    nav {
+        padding: 0;
+        justify-content: right;
+    }
+
+    nav button {
+        margin: .5rem 3vw !important;
+    }
+
+    #xi-button {
+        visibility: visible;
+        background-color: transparent;
+        border: none;
+        padding: 0rem;
+        font-size: 2rem;
+        outline: 2px solid transparent;
+        transition: .8s cubic-bezier(0, .8, .2, 1);
+    }
+
+    .menu {
+        position: fixed;
+        background-color: var(--bg);
+        height: 100vh;
+        right: 0;
+        line-height: 3em;
+        padding: 15vw;
+        list-style: none;
+    }
+
     @media only screen and (max-width: 425px) {
 
         header {
@@ -378,40 +411,6 @@ footer {
             font-size: .6rem;
             padding: .2rem;
             border-radius: .2rem;
-        }
-
-        .nav-list-div {
-            display: none;
-        }
-
-        nav {
-            padding: 0;
-            justify-content: center;
-        }
-
-        nav button {
-            margin: .5rem 3vw !important;
-        }
-
-        #xi-button {
-            visibility: visible;
-            background-color: transparent;
-            border: none;
-            border-radius: 99px;
-            padding: .5rem;
-            font-size: 1rem;
-            outline: 2px solid transparent;
-            transition: .8s cubic-bezier(0, .8, .2, 1);
-        }
-
-        .menu {
-            position: fixed;
-            background-color: var(--bg);
-            height: 100vh;
-            right: 0;
-            line-height: 3em;
-            padding: 15vw;
-            list-style: none;
         }
 
         .menu a {

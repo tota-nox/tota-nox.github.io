@@ -322,7 +322,8 @@ footer {
     .bento {
         display: flex;
         gap: 2rem;
-        overflow-x: auto;
+        overflow-x: scroll; /* Must be 'scroll' not 'auto' */
+        -webkit-overflow-scrolling: touch;
         overflow-y: hidden;
     }
 

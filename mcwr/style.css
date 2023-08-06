@@ -220,7 +220,8 @@ h3 {
     font-size: 2rem;
 }
 
-p {
+p
+main li {
     font-size: 1.5rem;
     color: var(--sec);
     margin-bottom: 1em;

@@ -38,6 +38,7 @@ body {
 }
 
 .menu {
+    display: none;
     opacity: 0;
     z-index: 5;
 }
@@ -378,6 +379,7 @@ footer {
     }
 
     .menu {
+        display: auto;
         position: fixed;
         background-color: var(--bg);
         height: 100vh;

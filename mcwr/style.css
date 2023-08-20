@@ -379,7 +379,7 @@ footer {
     }
 
     .menu {
-        display: auto;
+        display: inline;
         position: fixed;
         background-color: var(--bg);
         height: 100vh;

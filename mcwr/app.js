@@ -31,7 +31,7 @@ function toggleMenu() {
 }
 
 var x = setInterval(() => {
-    var releaseDate = new Date("2024-05-11T14:00:00Z");
+    var releaseDate = new Date("2024-05-11T14:30:00Z");
     var now = new Date();
     var countDown = releaseDate.getTime() - now.getTime();
     var daysCd = Math.floor(countDown / (1000 * 60 * 60 * 24));

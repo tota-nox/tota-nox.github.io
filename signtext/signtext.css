@@ -1,0 +1,83 @@
+@font-face {
+    font-family: Minecraft Seven v2;
+    src: url("/Minecraft-Seven_v2.otf") format("opentype");
+}
+
+:root {
+    font-family: Inter, sans-serif;
+    font-feature-settings: 'liga' 1, 'calt' 1, 'dlig' 1, 'ss02' 1;
+}
+
+@supports (font-variation-settings: normal) {
+    :root { font-family: InterVariable, sans-serif; }
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    padding: 36px 0;
+    max-width: 60vh;
+    margin: 0 auto;
+}
+
+.sign {
+    font-family: 'Minecraft Seven v2';
+    font-size: 36px;
+    background-color: #000000;
+    border-radius: 0.3em;
+    margin: 1em auto;
+    padding: 0.3em;
+    width: 8.9em;
+    height: 5.4em;
+
+    p {
+        color: #55FF55;
+        text-shadow:
+            .1em .1em #278828,
+            .1em 0em #278828,
+            .1em -.1em #278828,
+            0em -.1em #278828,
+            -.1em -.1em #278828,
+            -.1em 0em #278828,
+            -.1em .1em #278828,
+            0em .1em #278828;
+        display: block;
+        text-align: center;
+        word-spacing: 0.1em;
+        font-size: 36px;
+        margin: 0.3em 0;
+        white-space: pre;
+    } 
+}
+
+.compromise p {
+    color: #FFFF55;
+    text-shadow:
+        .1em .1em #888828,
+        .1em 0em #888828,
+        .1em -.1em #888828,
+        0em -.1em #888828,
+        -.1em -.1em #888828,
+        -.1em 0em #888828,
+        -.1em .1em #888828,
+        0em .1em #888828;
+}
+
+.too-long p {
+    color: #FF5555;
+    text-shadow:
+        .1em .1em #882728,
+        .1em 0em #882728,
+        .1em -.1em #882728,
+        0em -.1em #882728,
+        -.1em -.1em #882728,
+        -.1em 0em #882728,
+        -.1em .1em #882728,
+        0em .1em #882728;
+}
+
+input, select {
+    background-color: #eeeeee;
+    border: none;
+    padding: 1em;
+    border-radius: 100vh;
+}

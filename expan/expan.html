@@ -34,6 +34,14 @@
             ';': '\'',
             ':': '°',
         }
+
+        function copyText() {
+            let $temp = $('<input>');
+            $('body').append($temp);
+            $temp.val($('#output').text()).select();
+            document.execCommand('copy');
+            $temp.remove();
+        }
         
         $(document).keyup(function() {
             if (!'iautkrnh. '.split().some(e => $('#input').val().includes(e))) {
@@ -95,7 +103,6 @@
         * {
             font-family: sans-serif;
             font-weight: 500;
-            font-size: 50px;
         }
         
         .red {
@@ -106,5 +113,6 @@
 <body>
     <textarea type="text" id="input""></textarea>
     <p id="output"></p>
+    <button onclick='copyText()'>Copy</button>
 </body>
 </html>

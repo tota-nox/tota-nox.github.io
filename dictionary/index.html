@@ -1,0 +1,58 @@
+<!-- This is a dictionary for a conlang called the Ocular Language, used as an auxlang in a fictional world. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Noto%20Sans%20JP' rel='stylesheet'>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="words.js"></script>
+    <script src="script.js"></script>
+
+    <title>Ocular Dictionary</title>
+</head>
+<body>
+    <div class="content">
+        <div class="main"></div>
+        <div class="search-container extruded">
+            <div class="search-box inset">
+                <i data-lucide="search" class="icon"></i>
+                <input type="search" name="" id="" aria-label="Search in Ocular">
+            </div>
+            <div class="search-selection-container">
+                <div class="lang-search-selection">
+                    <button type="button" class="lang-search-option extruded active" id="ocular-search" data-search="qoq" onclick="setSearchLang('qoq')">
+                        <span class="lang-text">Ocular</span>
+                    </button>
+                    <button type="button" class="lang-search-option extruded" id="english-search" data-search="en" onclick="setSearchLang('en')">
+                        <span class="lang-text">English</span>
+                    </button>
+                    <button type="button" class="lang-search-option extruded" id="japanese-search" onclick="setSearchLang('jp')" data-search="jp">
+                        <span class="lang-text">日本語</span>
+                    </button>
+                </div>
+            </div>
+            <div class="def-selection-container">
+                <p><i data-lucide="globe" class="icon"></i> Definitions 定義言語</p>
+                <div class="lang-def-selection">
+                    <button type="button" class="lang-def-option extruded active" id="english-def" data-def="en" onclick="setDefLang('en')">
+                        <span class="lang-text">English</span>
+                    </button>
+                    <button type="button" class="lang-def-option extruded" id="japanese-def" onclick="setDefLang('jp')" data-def="jp">
+                        <span class="lang-text">日本語</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
